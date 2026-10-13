@@ -1,0 +1,64 @@
+/* Daviya — responsive refinements (loaded after style.css) */
+
+@media (max-width: 1199.98px) {
+  .daviya-header.is-scrolled .daviya-logo { width: 52px; height: 52px; }
+  .dv-steps { grid-template-columns: repeat(2, 1fr); }
+  .dv-svc--wide { grid-template-columns: 1fr; gap: 20px; }
+}
+
+@media (max-width: 991.98px) {
+  html { scroll-padding-top: 80px; }
+  .dv-strip-card { grid-template-columns: repeat(2, 1fr); }
+  .dv-stat:nth-child(2) { border-right: 0; }
+  .dv-stat:nth-child(-n+2) { border-bottom: 1px solid var(--daviya-border); }
+  .dv-table-wrap { max-width: 400px; margin-top: 36px; }
+  .dv-hero { text-align: left; }
+}
+
+@media (max-width: 767.98px) {
+  body { font-size: 16.5px; }
+  .dv-hero-actions .dv-btn { flex: 1 1 100%; }
+  .dv-svc--wide .dv-ticks { grid-template-columns: 1fr; }
+  .dv-steps { grid-template-columns: 1fr; }
+  .dv-compare thead { display: none; }
+  .dv-compare, .dv-compare tbody, .dv-compare tr, .dv-compare th, .dv-compare td { display: block; width: 100% !important; }
+  .dv-compare tr { border-bottom: 1px solid var(--daviya-border); }
+  .dv-compare tr:last-child { border-bottom: 0; }
+  .dv-compare tbody th { padding: 18px 20px 6px; border: 0; background: var(--daviya-cream); }
+  .dv-compare td { border: 0; padding: 10px 20px; }
+  .dv-compare td.is-dv::before { content: "Daviya"; display: block; font-size: 13px; font-weight: 700; color: var(--daviya-green); margin-bottom: 2px; }
+  .dv-compare td:not(.is-dv)::before { content: "Large, crowded homes"; display: block; font-size: 13px; font-weight: 700; color: var(--daviya-muted); margin-bottom: 2px; }
+  .dv-compare td:last-child { padding-bottom: 18px; }
+  .dv-day li { grid-template-columns: 44px 1fr; gap: 16px; }
+  .dv-day::before { left: 21px; }
+  .dv-day-dot { width: 44px; height: 44px; font-size: 20px; box-shadow: 0 0 0 6px var(--daviya-green-dark); }
+  .dv-faq .accordion-button { padding: 18px 18px; font-size: 1rem; }
+  .dv-faq .accordion-body { padding: 4px 18px 20px; }
+  .dv-footer { padding-top: 56px; }
+  .dv-float { right: 12px; bottom: 12px; }
+  .dv-float a { width: 52px; height: 52px; font-size: 24px; }
+}
+
+@media (max-width: 479.98px) {
+  .dv-strip-card { border-radius: 18px; }
+  .dv-stat { padding: 22px 12px; }
+  .dv-opt span { padding: 11px 16px; font-size: 15px; }
+  .dv-form-actions .dv-btn { flex-basis: 100%; }
+}
+
+@media print {
+  .daviya-header, .dv-float, .dv-hero-actions { display: none !important; }
+}
+
+/* Prevent wide Bootstrap gutters from causing sideways scroll on small screens */
+@media (max-width: 991.98px) {
+  .row.g-5 { --bs-gutter-x: 1.5rem; }
+}
+
+/* Comfortable side padding on phones */
+@media (max-width: 575.98px) {
+  .dv-hero .container,
+  .dv-strip .container,
+  .dv-section .container,
+  .dv-footer .container { padding-right: 20px; padding-left: 20px; }
+}
