@@ -35,6 +35,9 @@ Everything about services comes from the Daviya profile and Word document. These
 confirmed by your team: the "A day at Daviya" routine, the "Moving in, step by step" process, the comparison table,
 the FAQ answers on price and visits, and the visit checklist.
 
-## Photos
-The site has no resident or building photos yet. When you have them, add them to `assets/media/images/` and
-tell me where to place them (hero, a gallery section, each service card).
+## Images
+All pictures are real photographs in `assets/media/images/photos/` (no illustrations). Replace any file there with your own
+photo of the same name (JPG, ~1600x1120 px, 10:7) to update it everywhere. Check licences / permissions of every photo before launch.
+
+## Credit
+The footer of every page carries "Designed & maintained by Tssg Tech" linking to https://tssgtech.com/.
